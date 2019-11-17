@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Kitchen_Manager.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,17 @@ namespace Kitchen_Manager.Controllers
     {
         [HttpGet]
         [Route("spice")]
-        public string[] Get()
+        public Contents[] Get()
         {
-            string[] contents = new string[2] { "Onion Powder", "Paprika" };
+            Contents[] contents = new Contents[2];
+            Contents temp = new Contents();
+            temp.Name = "Paprika";
+            temp.Ounces = 10;
+            contents[0] = temp;
+            temp = new Contents();
+            temp.Name = "Onion Powder";
+            temp.Ounces = 12;
+            contents[1] = temp;
             return contents;
         }
     }

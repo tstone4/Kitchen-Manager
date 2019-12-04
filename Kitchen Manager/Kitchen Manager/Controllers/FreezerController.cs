@@ -1,4 +1,4 @@
-﻿using Kitchen_Manager.Models;
+﻿using KitchenManagerCommand.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;

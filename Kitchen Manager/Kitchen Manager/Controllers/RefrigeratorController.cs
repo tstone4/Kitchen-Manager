@@ -1,9 +1,9 @@
-﻿using Kitchen_Manager.Models;
+﻿using KitchenManagerCommand.Commands.Refrigerator;
+using KitchenManagerCommand.Models;
+using KitchenManagerQuery.Queries.Refrigerator;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Kitchen_Manager.Controllers
 {
@@ -11,19 +11,46 @@ namespace Kitchen_Manager.Controllers
     {
         [HttpGet]
         [Route("refrigerator")]
-        public Contents[] Get()
+        public List<KitchenManagerQuery.Models.Contents> GetRefrigeratorContents()
         {
+            GetItemsFromRefrigerator temp = new GetItemsFromRefrigerator();
+            return temp.GetItems();
+        }
 
-            Contents[] contents = new Contents[2];
-            Contents temp = new Contents();
-            temp.Name = "Milk";
-            temp.Ounces = 128;
-            contents[0] = temp;
-            temp = new Contents();
-            temp.Name = "Eggs";
-            temp.Ounces = 16;
-            contents[1] = temp;
-            return contents;
-    }
+        [HttpGet]
+        [Route("refrigerator/{id}")]
+        public KitchenManagerQuery.Models.Contents GetRefrigeratorContents(Guid Id)
+        {
+            GetItemFromRefrigerator temp = new GetItemFromRefrigerator();
+            return temp.GetItem(Id);
+        }
+
+        [HttpPost]
+        [Route("refrigerator")]
+        public ActionResult AddItemToRefrigerator([FromBody]Contents contents)
+        {
+            AddItemToRefrigerator temp = new AddItemToRefrigerator();
+            temp.AddItem(contents);
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("refrigerator/{id}")]
+        public ActionResult DeleteItemFromRefrigerator(Guid Id)
+        {
+            DeleteItemFromRefrigerator temp = new DeleteItemFromRefrigerator();
+            temp.DeleteItem(Id);
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("refrigerator/{id}")]
+        public ActionResult UpdateItemToRefrigerator([FromBody]Contents contents, Guid Id)
+        {
+            UpdateItemToRefrigerator temp = new UpdateItemToRefrigerator();
+            contents.Id = Id;
+            temp.UpdateItem(contents);
+            return Ok();
+        }
     }
 }

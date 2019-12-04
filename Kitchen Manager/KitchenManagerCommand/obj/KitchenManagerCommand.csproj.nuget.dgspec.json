@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\KitchenManagerCommand.csproj": {}
+  },
+  "projects": {
+    "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\KitchenManagerCommand.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\KitchenManagerCommand.csproj",
+        "projectName": "KitchenManagerCommand",
+        "projectPath": "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\KitchenManagerCommand.csproj",
+        "packagesPath": "C:\\Users\\tstone\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tstone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://epitec.pkgs.visualstudio.com/_packaging/All/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

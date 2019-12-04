@@ -1,0 +1,8 @@
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\bin\Debug\netstandard2.0\KitchenManagerCommand.deps.json
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\bin\Debug\netstandard2.0\KitchenManagerCommand.dll
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\obj\Debug\netstandard2.0\KitchenManagerCommand.AssemblyInfoInputs.cache
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\obj\Debug\netstandard2.0\KitchenManagerCommand.AssemblyInfo.cs
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\bin\Debug\netstandard2.0\KitchenManagerCommand.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\obj\Debug\netstandard2.0\KitchenManagerCommand.dll
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\obj\Debug\netstandard2.0\KitchenManagerCommand.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerCommand\obj\Debug\netstandard2.0\KitchenManagerCommand.csprojAssemblyReference.cache

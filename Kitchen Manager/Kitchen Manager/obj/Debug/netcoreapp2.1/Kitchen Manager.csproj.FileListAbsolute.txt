@@ -14,6 +14,10 @@ C:\Code\Kitchen Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\
 C:\Code\Kitchen Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.RazorTargetAssemblyInfo.cache
 C:\Code\Kitchen Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.dll
 C:\Code\Kitchen Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.RazorAssemblyInfo.cache
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.RazorAssemblyInfo.cs
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.AssemblyInfoInputs.cache
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.AssemblyInfo.cs
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\appsettings.Development.json
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
@@ -22,11 +26,12 @@ C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debu
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\Kitchen Manager.runtimeconfig.dev.json
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\Kitchen Manager.dll
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\Kitchen Manager.pdb
-C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.csprojAssemblyReference.cache
-C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.RazorAssemblyInfo.cache
-C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.RazorAssemblyInfo.cs
-C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.AssemblyInfoInputs.cache
-C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.AssemblyInfo.cs
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.RazorTargetAssemblyInfo.cache
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.dll
 C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.csprojAssemblyReference.cache
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\KitchenManagerCommand.dll
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\KitchenManagerCommand.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\obj\Debug\netcoreapp2.1\Kitchen Manager.csproj.CopyComplete
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\KitchenManagerQuery.dll
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\Kitchen Manager\bin\Debug\netcoreapp2.1\KitchenManagerQuery.pdb

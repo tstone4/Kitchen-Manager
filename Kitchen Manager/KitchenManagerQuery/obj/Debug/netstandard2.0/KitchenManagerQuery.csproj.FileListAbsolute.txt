@@ -1,0 +1,8 @@
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\obj\Debug\netstandard2.0\KitchenManagerQuery.AssemblyInfoInputs.cache
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\obj\Debug\netstandard2.0\KitchenManagerQuery.AssemblyInfo.cs
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\bin\Debug\netstandard2.0\KitchenManagerQuery.deps.json
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\bin\Debug\netstandard2.0\KitchenManagerQuery.dll
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\bin\Debug\netstandard2.0\KitchenManagerQuery.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\obj\Debug\netstandard2.0\KitchenManagerQuery.dll
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\obj\Debug\netstandard2.0\KitchenManagerQuery.pdb
+C:\Code\Kitchen Manager\Kitchen-Manager\Kitchen Manager\KitchenManagerQuery\obj\Debug\netstandard2.0\KitchenManagerQuery.csprojAssemblyReference.cache

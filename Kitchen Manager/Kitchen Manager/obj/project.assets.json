@@ -4339,6 +4339,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "KitchenManagerCommand/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dapper": "2.0.30",
+          "System.Data.SqlClient": "4.5.1"
+        },
+        "compile": {
+          "bin/placeholder/KitchenManagerCommand.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KitchenManagerCommand.dll": {}
+        }
+      },
+      "KitchenManagerQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dapper": "2.0.30",
+          "System.Data.SqlClient": "4.5.1"
+        },
+        "compile": {
+          "bin/placeholder/KitchenManagerQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KitchenManagerQuery.dll": {}
+        }
       }
     }
   },
@@ -11865,11 +11893,23 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "KitchenManagerCommand/1.0.0": {
+      "type": "project",
+      "path": "../KitchenManagerCommand/KitchenManagerCommand.csproj",
+      "msbuildProject": "../KitchenManagerCommand/KitchenManagerCommand.csproj"
+    },
+    "KitchenManagerQuery/1.0.0": {
+      "type": "project",
+      "path": "../KitchenManagerQuery/KitchenManagerQuery.csproj",
+      "msbuildProject": "../KitchenManagerQuery/KitchenManagerQuery.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Dapper >= 2.0.30",
+      "KitchenManagerCommand >= 1.0.0",
+      "KitchenManagerQuery >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -11906,7 +11946,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\KitchenManagerCommand.csproj": {
+              "projectPath": "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerCommand\\KitchenManagerCommand.csproj"
+            },
+            "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerQuery\\KitchenManagerQuery.csproj": {
+              "projectPath": "C:\\Code\\Kitchen Manager\\Kitchen-Manager\\Kitchen Manager\\KitchenManagerQuery\\KitchenManagerQuery.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

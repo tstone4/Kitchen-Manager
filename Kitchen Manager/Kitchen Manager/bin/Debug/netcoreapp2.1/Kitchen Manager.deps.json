@@ -25,6 +25,8 @@
       "Kitchen Manager/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.30",
+          "KitchenManagerCommand": "1.0.0",
+          "KitchenManagerQuery": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -53,6 +55,30 @@
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
       "System.Reflection.Emit.Lightweight/4.6.0": {},
+      "KitchenManagerCommand/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.30",
+          "System.Data.SqlClient": "4.5.1"
+        },
+        "runtime": {
+          "KitchenManagerCommand.dll": {}
+        },
+        "compile": {
+          "KitchenManagerCommand.dll": {}
+        }
+      },
+      "KitchenManagerQuery/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.30",
+          "System.Data.SqlClient": "4.5.1"
+        },
+        "runtime": {
+          "KitchenManagerQuery.dll": {}
+        },
+        "compile": {
+          "KitchenManagerQuery.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -3193,6 +3219,16 @@
       "sha512": "sha512-j/V5HVvxvBQ7uubYD0PptQW2KGsi1Pc2kZ9yfwLixv3ADdjL/4M78KyC5e+ymW612DY8ZE4PFoZmWpoNmN2mqg==",
       "path": "system.reflection.emit.lightweight/4.6.0",
       "hashPath": "system.reflection.emit.lightweight.4.6.0.nupkg.sha512"
+    },
+    "KitchenManagerCommand/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KitchenManagerQuery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

@@ -1,11 +1,9 @@
-﻿using Dapper;
-using Kitchen_Manager.Models;
+﻿using KitchenManagerCommand.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
+using KitchenManagerQuery.Queries.Pantry;
+using KitchenManagerCommand.Commands.Pantry;
 
 namespace Kitchen_Manager.Controllers
 {
@@ -13,27 +11,46 @@ namespace Kitchen_Manager.Controllers
     {
         [HttpGet]
         [Route("pantry")]
-        public List<Contents> Get()
+        public List<KitchenManagerQuery.Models.Contents> GetPantryItems()
         {
-            using (var context = new SqlConnection("Server=localhost;Database=KitchenManager;Trusted_Connection=True;"))
-            {
-                var sql = @"SELECT top 10 * FROM Pantry";
-                var x = context.Query<Contents>(sql).ToList();
-                return x;
-            }
+            GetItemsFromPantry temp = new GetItemsFromPantry();
+            return temp.GetItems();
         }
+
+        [HttpGet]
+        [Route("pantry/{id}")]
+        public KitchenManagerQuery.Models.Contents GetPantryItem(Guid Id)
+        {
+            GetItemFromPantry temp = new GetItemFromPantry();
+            return temp.GetItem(Id);
+        }
+
         [HttpPost]
         [Route("pantry")]
         public ActionResult AddPantryItem([FromBody]Contents contents)
         {
-            contents.Id = Guid.NewGuid();
-            contents.CreatedDate = DateTime.UtcNow;
-            contents.PurchaseDate = DateTime.UtcNow;
-            using (var context = new SqlConnection("Server=localhost;Database=KitchenManager;Trusted_Connection=True;"))
-            {
-                var sql = @"INSERT INTO Pantry (ID, Name, Ounces, PurchaseDate, CreatedDate, ExpirationDate) VALUES ( @Id, @Name, @Ounces, @PurchaseDate, @CreatedDate, @ExpirationDate)";
-                context.Execute(sql, new {@Id = contents.Id, @Name = contents.Name, @Ounces = contents.Ounces, @PurchaseDate = contents.PurchaseDate, @CreatedDate = contents.CreatedDate, @ExpirationDate = contents.ExpirationDate  });
-            }
+            AddItemToPantry temp = new AddItemToPantry();
+            temp.AddItem(contents);
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("pantry/{id}")]
+        public ActionResult UpdatePantryItem([FromBody]Contents contents, Guid Id)
+        {
+            UpdateItemToPantry temp = new UpdateItemToPantry();
+            contents.Id = Id;
+            temp.UpdateItem(contents);
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("pantry/{Id}")]
+        public ActionResult DeletePantryItem(Guid Id)
+        {
+            DeleteItemFromPantry temp = new DeleteItemFromPantry();
+            temp.DeleteItem(Id);
+
             return Ok();
         }
     }

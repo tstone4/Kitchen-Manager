@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace Kitchen_Manager.Models
+namespace KitchenManagerQuery.Models
 {
     public class Contents
     {
-        //Server=localhost;Database=KitchenManager;Trusted_Connection=True;
         public Guid Id { get; set; }
         public string Name { get; set; }
         public double Ounces { get; set; }

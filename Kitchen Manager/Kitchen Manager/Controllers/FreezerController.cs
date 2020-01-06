@@ -1,4 +1,5 @@
 ﻿using KitchenManagerCommand.Models;
+using KitchenManagerQuery.Queries.Freezer;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,18 +12,46 @@ namespace Kitchen_Manager.Controllers
     {
         [HttpGet]
         [Route("freezer")]
-        public Contents[] Get()
+        public List<KitchenManagerQuery.Models.Contents> GetRefrigeratorContents()
         {
-            Contents[] contents = new Contents[2];
-            Contents temp = new Contents();
-            temp.Name = "Frozen Peas";
-            temp.Ounces = 16;
-            contents[0] = temp;
-            temp = new Contents();
-            temp.Name = "Frozen Corn";
-            temp.Ounces = 32;
-            contents[1] = temp;
-            return contents;
+            GetItemsFromFreezer temp = new GetItemsFromFreezer();
+            return temp.GetItems();
+        }
+
+        [HttpGet]
+        [Route("freezer/{id}")]
+        public KitchenManagerQuery.Models.Contents GetRefrigeratorContents(Guid Id)
+        {
+            GetItemFromFreezer temp = new GetItemFromFreezer();
+            return temp.GetItem(Id);
+        }
+
+        [HttpPost]
+        [Route("freezer")]
+        public ActionResult AddItemToRefrigerator([FromBody]Contents contents)
+        {
+            AddItemToRefrigerator temp = new AddItemToRefrigerator();
+            temp.AddItem(contents);
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("freezer/{id}")]
+        public ActionResult DeleteItemFromRefrigerator(Guid Id)
+        {
+            DeleteItemFromRefrigerator temp = new DeleteItemFromRefrigerator();
+            temp.DeleteItem(Id);
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("freezer/{id}")]
+        public ActionResult UpdateItemToRefrigerator([FromBody]Contents contents, Guid Id)
+        {
+            UpdateItemToRefrigerator temp = new UpdateItemToRefrigerator();
+            contents.Id = Id;
+            temp.UpdateItem(contents);
+            return Ok();
         }
     }
 }
